@@ -25,7 +25,7 @@ Simply import it, assuming you're using [postcss-import] and [postcss-cssnext].
 @import 'modularscale.css';
 ```
 
-To use it, use any of the provided `--font-size-#` declarations:
+To use it, use any of the provided `--font-size-#` custom property sets:
 
 ```css
 div {
@@ -46,6 +46,14 @@ div { font-size: 1.74901rem; }
   div { font-size: 2.0736rem; }
 }
 ```
+
+It gives you the following custom property sets:
+
+ - `@apply --font-size--1` (negative 1)
+ - `@apply --font-size-1`
+ - `@apply --font-size-2`
+ - ... `@apply --font-size-8`
+
 
 ## Configuration
 
@@ -79,6 +87,12 @@ div {
 - [postcss-modular-scale](https://www.npmjs.com/package/postcss-modular-scale) is a PostCSS plugin. However, it doesn't support responsive ratios, and the syntax is non-standard CSS.
 
 - [modularscale-sass](https://www.npmjs.com/package/modularscale-sass) is, in my opinion, the gold standard modular scale implementation. It only supports Sass, however.
+
+## Also see
+
+- [PostCSS](http://postcss.org/) - CSS transformation tool.
+- [cssnext](http://cssnext.io/) - use tomorrow's CSS syntax today.
+- [cssnext custom properties](http://cssnext.io/features/#custom-properties-set-apply) documentation
 
 ## Thanks
 
