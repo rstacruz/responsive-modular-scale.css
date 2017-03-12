@@ -7,6 +7,17 @@ This implements a basic [Modular Scale](http://www.modularscale.com/) system usi
 [postcss-cssnext]: https://www.npmjs.com/package/postcss-cssnext
 [postcss-import]: https://www.npmjs.com/package/postcss-import
 
+## Installation
+
+```css
+# using Yarn
+yarn add --exact github:rstacruz/modularscale.css
+
+# using npm
+npm install --save --save-exact github:rstacruz/modularscale.css
+
+```
+
 ## Usage
 
 Simply import it, assuming you're using [postcss-import] and [postcss-cssnext].
