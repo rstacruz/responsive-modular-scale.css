@@ -74,6 +74,12 @@ div {
 }
 ```
 
+## Prior art
+
+- [postcss-modular-scale](https://www.npmjs.com/package/postcss-modular-scale) is a PostCSS plugin. However, it doesn't support responsive ratios, and the syntax is non-standard CSS.
+
+- [modularscale-sass](https://www.npmjs.com/package/modularscale-sass) is, in my opinion, the gold standard modular scale implementation. It only supports Sass, however.
+
 ## Thanks
 
 **modularscale.css** © 2017+, Rico Sta. Cruz. Released under the [MIT] License.<br>
