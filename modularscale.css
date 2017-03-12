@@ -7,8 +7,8 @@
   --ms-ratio-lg: 1.2;
   --ms-base: 1rem;
   --ms-base-sm: var(--ms-base);
-  --ms-base-md: var(--ms-base);
-  --ms-base-lg: var(--ms-base);
+  --ms-base-md: var(--ms-base-sm);
+  --ms-base-lg: var(--ms-base-md);
 
   --font-size--1: {
     font-size: calc(var(--ms-base-sm) / var(--ms-ratio-sm));

@@ -70,8 +70,8 @@ It's recommended you include this in a "common" file included in most of your pr
   --ms-ratio-lg: 1.2;
   --ms-base: 1rem;
   --ms-base-sm: var(--ms-base);
-  --ms-base-md: var(--ms-base);
-  --ms-base-lg: var(--ms-base);
+  --ms-base-md: var(--ms-base-sm);
+  --ms-base-lg: var(--ms-base-md);
 }
 
 @custom-media --ms-viewport-md (width > 480px);
