@@ -50,6 +50,7 @@ div { font-size: 1.74901rem; }
 It gives you the following custom property sets:
 
  - `@apply --font-size--1` (negative 1)
+ - `@apply --font-size-0` (applies to base font size)
  - `@apply --font-size-1`
  - `@apply --font-size-2`
  - ... `@apply --font-size-8`
@@ -67,6 +68,10 @@ It's recommended you include this in a "common" file included in most of your pr
   --ms-ratio-sm: 1.15;
   --ms-ratio-md: 1.17;
   --ms-ratio-lg: 1.2;
+  --ms-base: 1rem;
+  --ms-base-sm: var(--ms-base);
+  --ms-base-md: var(--ms-base);
+  --ms-base-lg: var(--ms-base);
 }
 
 @custom-media --ms-viewport-md (width > 480px);
@@ -76,6 +81,10 @@ It's recommended you include this in a "common" file included in most of your pr
 ```css
 /* your-other-styles.css */
 @import './variables.css';
+
+body {
+  @apply --font-size-0;
+}
 
 div {
   @apply --font-size-4;
