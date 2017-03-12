@@ -1,0 +1,15 @@
+{
+  "name": "modularscale.css",
+  "description": "Responsive typography using CSS variables",
+  "version": "1.0.0",
+  "author": "Rico Sta. Cruz <rico@ricostacruz.com>",
+  "keywords": [
+    "css",
+    "modular scale",
+    "responsive",
+    "typography"
+  ],
+  "license": "MIT",
+  "main": "modularscale.css",
+  "style": "modularscale.css"
+}
