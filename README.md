@@ -2,7 +2,7 @@
 
 > Responsive typography using CSS variables
 
-This implements a basic [Modular Scale](http://www.modularscale.com/) system using CSS variables. Use this with [postcss-cssnext].
+This implements a basic [Modular Scale](http://www.modularscale.com/) system using CSS variables. Use this with [postcss-cssnext] and [postcss-import].
 
 [postcss-cssnext]: https://www.npmjs.com/package/postcss-cssnext
 [postcss-import]: https://www.npmjs.com/package/postcss-import
@@ -33,9 +33,7 @@ div {
 }
 ```
 
-This applies a `font-size: 2.0736rem` declaration for desktops—the default ratio is 1.2, so that's `1rem * 1.2 ^ 4`.
-
-For mobiles and tablets, it will use a different ratio (1.15 and 1.17 by default).
+This applies a `font-size: 2.0736rem` declaration for desktops—the default ratio is 1.2, so that's `1rem * 1.2 ^ 4`. For mobiles and tablets, it will use a different ratio (1.15 and 1.17 by default).
 
 ```css
 div { font-size: 1.74901rem; }
