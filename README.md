@@ -9,13 +9,12 @@ This implements a basic [Modular Scale](http://www.modularscale.com/) system usi
 
 ## Installation
 
-```css
+```bash
 # using Yarn
 yarn add --exact github:rstacruz/modularscale.css
 
 # using npm
 npm install --save --save-exact github:rstacruz/modularscale.css
-
 ```
 
 ## Usage
