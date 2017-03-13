@@ -1,5 +1,5 @@
 {
-  "name": "modularscale.css",
+  "name": "responsive-modular-scale.css",
   "description": "Responsive typography using CSS variables",
   "version": "1.0.0",
   "author": "Rico Sta. Cruz <rico@ricostacruz.com>",
@@ -10,17 +10,17 @@
     "typography"
   ],
   "license": "MIT",
-  "main": "modularscale.css",
-  "style": "modularscale.css",
+  "main": "responsive-modular-scale.css",
+  "style": "responsive-modular-scale.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rstacruz/modularscale.css.git"
+    "url": "git+https://github.com/rstacruz/responsive-modular-scale.css.git"
   },
   "bugs": {
-    "url": "https://github.com/rstacruz/modularscale.css/issues"
+    "url": "https://github.com/rstacruz/responsive-modular-scale.css/issues"
   },
-  "homepage": "https://github.com/rstacruz/modularscale.css#readme"
+  "homepage": "https://github.com/rstacruz/responsive-modular-scale.css#readme"
 }

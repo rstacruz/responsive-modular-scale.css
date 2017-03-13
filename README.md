@@ -1,4 +1,4 @@
-# modularscale.css
+# responsive-modular-scale.css
 
 > Responsive typography using CSS variables
 
@@ -11,10 +11,10 @@ This implements a basic [Modular Scale](http://www.modularscale.com/) system usi
 
 ```bash
 # using Yarn
-yarn add --exact github:rstacruz/modularscale.css
+yarn add --exact responsive-modular-scale.css
 
 # using npm
-npm install --save --save-exact github:rstacruz/modularscale.css
+npm install --save --save-exact responsive-modular-scale.css
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ npm install --save --save-exact github:rstacruz/modularscale.css
 Simply import it, assuming you're using [postcss-import] and [postcss-cssnext].
 
 ```css
-@import 'modularscale.css';
+@import 'responsive-modular-scale.css';
 ```
 
 To use it, use any of the provided `--font-size-#` custom property sets:
@@ -62,7 +62,7 @@ It's recommended you include this in a "common" file included in most of your pr
 
 ```css
 /* variables.css */
-@import 'modularscale.css';
+@import 'responsive-modular-scale.css';
 
 :root {
   --ms-ratio-sm: 1.15;
@@ -105,7 +105,7 @@ div {
 
 ## Thanks
 
-**modularscale.css** © 2017+, Rico Sta. Cruz. Released under the [MIT] License.<br>
+**responsive-modular-scale.css** © 2017+, Rico Sta. Cruz. Released under the [MIT] License.<br>
 Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]).
 
 > [ricostacruz.com](http://ricostacruz.com) &nbsp;&middot;&nbsp;
@@ -113,4 +113,4 @@ Authored and maintained by Rico Sta. Cruz with help from contributors ([list][co
 > Twitter [@rstacruz](https://twitter.com/rstacruz)
 
 [MIT]: http://mit-license.org/
-[contributors]: http://github.com/rstacruz/modularscale.css/contributors
+[contributors]: http://github.com/rstacruz/responsive-modular-scale.css/contributors
