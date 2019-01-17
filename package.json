@@ -1,7 +1,7 @@
 {
   "name": "responsive-modular-scale.css",
   "description": "Responsive typography using CSS variables",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Rico Sta. Cruz <rico@ricostacruz.com>",
   "keywords": [
     "css",
