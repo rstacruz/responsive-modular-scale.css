@@ -53,7 +53,7 @@ It gives you the following custom property sets:
  - `@apply --font-size-0` (applies to base font size)
  - `@apply --font-size-1`
  - `@apply --font-size-2`
- - ... `@apply --font-size-8`
+ - ... `@apply --font-size-20`
 
 
 ## Configuration
@@ -105,7 +105,7 @@ div {
 
 ## Thanks
 
-**responsive-modular-scale.css** © 2017+, Rico Sta. Cruz. Released under the [MIT] License.<br>
+**responsive-modular-scale.css** © 2019+, Rico Sta. Cruz. Released under the [MIT] License.<br>
 Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]).
 
 > [ricostacruz.com](http://ricostacruz.com) &nbsp;&middot;&nbsp;
