@@ -21,8 +21,11 @@ _grep () {
 	echo ""
 	echo -e "\033[34mChecking output:\033[0m"
 	_grep "font-size: calc(1rem * 1.17);" test/output/test.css
-	_grep "font-size: calc(1rem * 1.2);" test/output/test.css
+	_grep "font-size: calc(1rem * 1.2);"  test/output/test.css
 	_grep "font-size: calc(1rem * 1.15);" test/output/test.css
+	_grep ".fontSize1 {"  test/output/css_modules.css
+	_grep ".fontSize2 {"  test/output/css_modules.css
+	_grep ".fontSize10 {" test/output/css_modules.css
 ) || (
 	echo ""
 	echo "Failure encountered, oops!"
