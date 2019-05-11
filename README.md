@@ -7,7 +7,7 @@ This implements a basic [Modular Scale](http://www.modularscale.com/) system usi
 [postcss-cssnext]: https://www.npmjs.com/package/postcss-cssnext
 [postcss-import]: https://www.npmjs.com/package/postcss-import
 [postcss-custom-media]: https://yarnpkg.com/en/package/postcss-custom-media
-[postcss-variables]: https://yarnpkg.com/en/package/postcss-variables
+[postcss-custom-properties]: https://yarnpkg.com/en/package/postcss-custom-properties
 [postcss-preset-env]: https://github.com/csstools/postcss-preset-env
 
 ## Installation
@@ -38,8 +38,8 @@ You can apply modular scale font sizes using CSS modules. For this, it's recomme
 1. **Configure it** &mdash; Set up a `variables.css` with your configuration. I recommend placing this wherever you put your common variables (eg, color palettes and font names).
 
    ```css
-   @import 'responsive-modular-scale.css/defaults.css';
-  
+   @import "responsive-modular-scale.css/defaults.css";
+
    :root {
      --ms-ratio-sm: 1.15;
      --ms-ratio-md: 1.17;
@@ -49,7 +49,7 @@ You can apply modular scale font sizes using CSS modules. For this, it's recomme
      --ms-base-md: var(--ms-base-sm);
      --ms-base-lg: var(--ms-base-md);
    }
-  
+
    @custom-media --ms-viewport-md (width > 480px);
    @custom-media --ms-viewport-lg (width > 768px);
    ```
@@ -57,10 +57,10 @@ You can apply modular scale font sizes using CSS modules. For this, it's recomme
 2. **Compose it in** &mdash; In the modules you want to use it, just import the `variables.css`, then use `composes`.
 
    ```css
-   @import '../variables.css';
+   @import "../variables.css";
 
    .myButton {
-     composes: fontSize2 from 'responsive-modular-scale.css/modularscale.module.css';
+     composes: fontSize2 from "responsive-modular-scale.css/modularscale.module.css";
    }
    ```
 
@@ -73,7 +73,7 @@ These CSS classes are available:
 - ...
 - `fontSize20`
 
-Learn more about the `composes:` property from the [CSS modules documentation]( https://github.com/css-modules/css-modules#composition).
+Learn more about the `composes:` property from the [CSS modules documentation](https://github.com/css-modules/css-modules#composition).
 
 ## Usage as property set
 
@@ -87,12 +87,12 @@ You can also apply modular scale font sizes using CSS property sets (aka, `@appl
 | [postcss-import] to import CSS files            | -                             | -                                |
 | [postcss-apply] for property sets               | :+1:                          | -                                |
 | [postcss-custom-media] for custom media queries | :+1:                          | :+1:                             |
-| [postcss-variables] for CSS variables           | :+1:                          | :+1:                             |
+| [postcss-custom-properties] for CSS variables   | :+1:                          | :+1:                             |
 
 </details>
 
 ```css
-@import 'responsive-modular-scale.css';
+@import "responsive-modular-scale.css";
 ```
 
 To use it, use any of the provided `--font-size-#` custom property sets:
