@@ -1,0 +1,5 @@
+@import '../../responsive-modular-scale.css';
+
+#one {
+  @apply --font-size-1;
+}

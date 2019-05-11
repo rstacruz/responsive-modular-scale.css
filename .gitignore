@@ -1,5 +1,7 @@
 node_modules
 
-# Don't commit this for libraries :)
+# Don't commit these for libraries :)
 yarn.lock
 package-lock.json
+
+/test/output
