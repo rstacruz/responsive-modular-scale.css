@@ -6,6 +6,9 @@ This implements a basic [Modular Scale](http://www.modularscale.com/) system usi
 
 [postcss-cssnext]: https://www.npmjs.com/package/postcss-cssnext
 [postcss-import]: https://www.npmjs.com/package/postcss-import
+[postcss-custom-media]: https://yarnpkg.com/en/package/postcss-custom-media
+[postcss-variables]: https://yarnpkg.com/en/package/postcss-variables
+[postcss-preset-env]: https://github.com/csstools/postcss-preset-env
 
 ## Installation
 
@@ -19,10 +22,70 @@ npm install --save --save-exact responsive-modular-scale.css
 
 ## Usage
 
-Simply import it, assuming you're using [postcss-import] and [postcss-cssnext].
+`responsive-modular-scale.css` comes in 2 flavors:
+
+- **CSS property sets**, which you can use via `@apply --font-size-2` and [postcss-apply]
+- **CSS modules**, which you can use via `composes: fontSize2 from 'responsive-modular-scale.css/modularscale.module.css'`
+
+[postcss-apply]: https://yarnpkg.com/en/package/postcss-apply
+
+See instructions below.
+
+## Usage as CSS module
+
+(:warning: Experimental) Use with [postcss-preset-env] + [postcss-import].
+
+1. Set up a `variables.css` with your configuration. I recommend placing this wherever you put your common variables (eg, color palettes and font names).
+
+   ```css
+   @import 'responsive-modular-scale.css/defaults.css';
+  
+   :root {
+     --ms-ratio-sm: 1.15;
+     --ms-ratio-md: 1.17;
+     --ms-ratio-lg: 1.2;
+     --ms-base: 1rem;
+     --ms-base-sm: var(--ms-base);
+     --ms-base-md: var(--ms-base-sm);
+     --ms-base-lg: var(--ms-base-md);
+   }
+  
+   @custom-media --ms-viewport-md (width > 480px);
+   @custom-media --ms-viewport-lg (width > 768px);
+   ```
+
+2. In the modules you want to use it, just import the `variables.css`, then use `compose`.
+
+   ```css
+   @import '../variables.css';
+
+   .myButton {
+     composes: fontSize2 from 'responsive-modular-scale.css/modularscale.module.css';
+   }
+   ```
+
+These CSS classes are available:
+
+- `fontSizeMinus1` (negative 1)
+- `fontSize0` (applies the base font size)
+- `fontSize1`
+- `fontSize2`
+- ...
+- `fontSize20`
+
+## Usage as property set
+
+You will need a few PostCSS plugins. Some of them come with [postcss-preset-env][postcss-preset-env] (highly recommended), but you may need to add others.
+
+| Dependency                                      | Comes with [postcss-cssnext]? | Comes with [postcss-preset-env]? |
+| ----------------------------------------------- | ----------------------------- | -------------------------------- |
+| [postcss-import] to import CSS files            | -                             | -                                |
+| [postcss-apply] for property sets               | :+1:                          | -                                |
+| [postcss-custom-media] for custom media queries | :+1:                          | :+1:                             |
+| [postcss-variables] for CSS variables           | :+1:                          | :+1:                             |
 
 ```css
-@import 'responsive-modular-scale.css';
+@import "responsive-modular-scale.css";
 ```
 
 To use it, use any of the provided `--font-size-#` custom property sets:
@@ -35,26 +98,37 @@ div {
 
 This applies a `font-size: 2.0736rem` declaration for desktops—the default ratio is 1.2, so that's `1rem * 1.2 ^ 4`. For mobiles and tablets, it will use a different ratio (1.15 and 1.17 by default).
 
+<details>
+<summary>Sample output</summary>
+
 ```css
-div { font-size: 1.74901rem; }
+div {
+  font-size: 1.74901rem;
+}
 
 @media (min-width: 481px) {
-  div { font-size: 1.87389rem; }
+  div {
+    font-size: 1.87389rem;
+  }
 }
 
 @media (min-width: 769px) {
-  div { font-size: 2.0736rem; }
+  div {
+    font-size: 2.0736rem;
+  }
 }
 ```
 
+</details>
+
 It gives you the following custom property sets:
 
- - `@apply --font-size--1` (negative 1)
- - `@apply --font-size-0` (applies to base font size)
- - `@apply --font-size-1`
- - `@apply --font-size-2`
- - ... `@apply --font-size-20`
-
+- `@apply --font-size--1` (negative 1)
+- `@apply --font-size-0` (applies the base font size)
+- `@apply --font-size-1`
+- `@apply --font-size-2`
+- ...
+- `@apply --font-size-20`
 
 ## Configuration
 
@@ -62,7 +136,7 @@ It's recommended you include this in a "common" file included in most of your pr
 
 ```css
 /* variables.css */
-@import 'responsive-modular-scale.css';
+@import "responsive-modular-scale.css";
 
 :root {
   --ms-ratio-sm: 1.15;
@@ -80,7 +154,7 @@ It's recommended you include this in a "common" file included in most of your pr
 
 ```css
 /* your-other-styles.css */
-@import './variables.css';
+@import "./variables.css";
 
 body {
   @apply --font-size-0;
@@ -112,5 +186,5 @@ Authored and maintained by Rico Sta. Cruz with help from contributors ([list][co
 > GitHub [@rstacruz](https://github.com/rstacruz) &nbsp;&middot;&nbsp;
 > Twitter [@rstacruz](https://twitter.com/rstacruz)
 
-[MIT]: LICENSE.md
+[mit]: LICENSE.md
 [contributors]: http://github.com/rstacruz/responsive-modular-scale.css/contributors
