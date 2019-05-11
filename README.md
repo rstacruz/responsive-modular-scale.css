@@ -24,8 +24,8 @@ npm install --save --save-exact responsive-modular-scale.css
 
 `responsive-modular-scale.css` comes in 2 flavors:
 
-- **CSS property sets**, which you can use via `@apply --font-size-2` and [postcss-apply]
-- **CSS modules**, which you can use via `composes: fontSize2 from 'responsive-modular-scale.css/modularscale.module.css'`
+- **CSS property sets**, which you can use via `@apply --font-size-2` via [postcss-apply].
+- **CSS modules**, which you can use via `composes: fontSize2`.
 
 [postcss-apply]: https://yarnpkg.com/en/package/postcss-apply
 
@@ -33,9 +33,9 @@ See instructions below.
 
 ## Usage as CSS module
 
-(:warning: Experimental) Use with [postcss-preset-env] + [postcss-import].
+You can apply modular scale font sizes using CSS modules. For this, it's recommended to use [postcss-preset-env] along with [postcss-import]. (:warning: Experimental!)
 
-1. Set up a `variables.css` with your configuration. I recommend placing this wherever you put your common variables (eg, color palettes and font names).
+1. **Configure it** &mdash; Set up a `variables.css` with your configuration. I recommend placing this wherever you put your common variables (eg, color palettes and font names).
 
    ```css
    @import 'responsive-modular-scale.css/defaults.css';
@@ -54,7 +54,7 @@ See instructions below.
    @custom-media --ms-viewport-lg (width > 768px);
    ```
 
-2. In the modules you want to use it, just import the `variables.css`, then use `compose`.
+2. **Compose it in** &mdash; In the modules you want to use it, just import the `variables.css`, then use `composes`.
 
    ```css
    @import '../variables.css';
@@ -73,9 +73,14 @@ These CSS classes are available:
 - ...
 - `fontSize20`
 
+Learn more about the `composes:` property from the [CSS modules documentation]( https://github.com/css-modules/css-modules#composition).
+
 ## Usage as property set
 
-You will need a few PostCSS plugins. Some of them come with [postcss-preset-env][postcss-preset-env] (highly recommended), but you may need to add others.
+You can also apply modular scale font sizes using CSS property sets (aka, `@apply`). You will need a few PostCSS plugins. I recommend using [postcss-preset-env][postcss-preset-env] along with [postcss-import] and [postcss-apply].
+
+<details>
+<summary><em>View plugins needed</em></summary>
 
 | Dependency                                      | Comes with [postcss-cssnext]? | Comes with [postcss-preset-env]? |
 | ----------------------------------------------- | ----------------------------- | -------------------------------- |
@@ -84,8 +89,10 @@ You will need a few PostCSS plugins. Some of them come with [postcss-preset-env]
 | [postcss-custom-media] for custom media queries | :+1:                          | :+1:                             |
 | [postcss-variables] for CSS variables           | :+1:                          | :+1:                             |
 
+</details>
+
 ```css
-@import "responsive-modular-scale.css";
+@import 'responsive-modular-scale.css';
 ```
 
 To use it, use any of the provided `--font-size-#` custom property sets:
@@ -99,7 +106,7 @@ div {
 This applies a `font-size: 2.0736rem` declaration for desktops—the default ratio is 1.2, so that's `1rem * 1.2 ^ 4`. For mobiles and tablets, it will use a different ratio (1.15 and 1.17 by default).
 
 <details>
-<summary>Sample output</summary>
+<summary><em>View sample output</em></summary>
 
 ```css
 div {
