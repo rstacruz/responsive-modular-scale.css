@@ -1,0 +1,520 @@
+.msFontSizeMinus1 {
+  font-size: calc(var(--ms-base-sm) / var(--ms-ratio-sm));
+  @media (--ms-viewport-md) {
+    font-size: calc(var(--ms-base-md) / var(--ms-ratio-md));
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(var(--ms-base-lg) / var(--ms-ratio-lg));
+  }
+}
+
+.msFontSize0 {
+  font-size: var(--ms-base-sm);
+  @media (--ms-viewport-md) {
+    font-size: var(--ms-base-md);
+  }
+  @media (--ms-viewport-lg) {
+    font-size: var(--ms-base-lg);
+  }
+}
+
+.msFontSize1 {
+  font-size: calc(var(--ms-base-sm) * var(--ms-ratio-sm));
+  @media (--ms-viewport-md) {
+    font-size: calc(var(--ms-base-md) * var(--ms-ratio-md));
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(var(--ms-base-lg) * var(--ms-ratio-lg));
+  }
+}
+
+.msFontSize2 {
+  font-size: calc(var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm));
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize3 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize4 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize5 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize6 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize7 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize8 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize9 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize10 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize11 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize12 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize13 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize14 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize15 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize16 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize17 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize18 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize19 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}
+
+.msFontSize20 {
+  font-size: calc(
+    var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
+      var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm)
+  );
+  @media (--ms-viewport-md) {
+    font-size: calc(
+      var(--ms-base-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md) *
+        var(--ms-ratio-md) * var(--ms-ratio-md) * var(--ms-ratio-md)
+    );
+  }
+  @media (--ms-viewport-lg) {
+    font-size: calc(
+      var(--ms-base-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg) *
+        var(--ms-ratio-lg) * var(--ms-ratio-lg) * var(--ms-ratio-lg)
+    );
+  }
+}

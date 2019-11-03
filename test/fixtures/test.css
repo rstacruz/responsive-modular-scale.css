@@ -1,0 +1,6 @@
+@import '../../defaults.css';
+@import '../../modularscale.apply.css';
+
+#one {
+  @apply --ms-font-size-1;
+}
