@@ -1,5 +1,6 @@
-@import '../../responsive-modular-scale.css';
+@import '../../defaults.css';
+@import '../../modularscale.apply.css';
 
 #one {
-  @apply --font-size-1;
+  @apply --ms-font-size-1;
 }

@@ -22,78 +22,39 @@ npm install --save --save-exact responsive-modular-scale.css
 
 ## Usage
 
-`responsive-modular-scale.css` comes in 2 flavors:
+`responsive-modular-scale.css` can be used in 3 different ways:
 
-- **CSS property sets**, which you can use via `@apply --font-size-2` via [postcss-apply].
-- **CSS modules**, which you can use via `composes: fontSize2`.
+### Functional selectors (`postcss-extend-rule`)
 
-[postcss-apply]: https://yarnpkg.com/en/package/postcss-apply
-
-See instructions below.
-
-## Usage as CSS module
-
-You can apply modular scale font sizes using CSS modules. For this, it's recommended to use [postcss-preset-env] along with [postcss-import]. (:warning: Experimental!)
-
-1. **Configure it** &mdash; Set up a `variables.css` with your configuration. I recommend placing this wherever you put your common variables (eg, color palettes and font names).
-
-   ```css
-   @import "responsive-modular-scale.css/defaults.css";
-
-   :root {
-     --ms-ratio-sm: 1.15;
-     --ms-ratio-md: 1.17;
-     --ms-ratio-lg: 1.2;
-     --ms-base: 1rem;
-     --ms-base-sm: var(--ms-base);
-     --ms-base-md: var(--ms-base-sm);
-     --ms-base-lg: var(--ms-base-md);
-   }
-
-   @custom-media --ms-viewport-md (width > 480px);
-   @custom-media --ms-viewport-lg (width > 768px);
-   ```
-
-2. **Compose it in** &mdash; In the modules you want to use it, just import the `variables.css`, then use `composes`.
-
-   ```css
-   @import "../variables.css";
-
-   .myButton {
-     composes: fontSize2 from "responsive-modular-scale.css/modularscale.module.css";
-   }
-   ```
-
-These CSS classes are available:
-
-- `fontSizeMinus1` (negative 1)
-- `fontSize0` (applies the base font size)
-- `fontSize1`
-- `fontSize2`
-- ...
-- `fontSize20`
-
-Learn more about the `composes:` property from the [CSS modules documentation](https://github.com/css-modules/css-modules#composition).
-
-## Usage as property set
-
-You can also apply modular scale font sizes using CSS property sets (aka, `@apply`). You will need a few PostCSS plugins. I recommend using [postcss-preset-env][postcss-preset-env] along with [postcss-import] and [postcss-apply].
-
-<details>
-<summary><em>View plugins needed</em></summary>
-
-| Dependency                                      | Comes with [postcss-cssnext]? | Comes with [postcss-preset-env]? |
-| ----------------------------------------------- | ----------------------------- | -------------------------------- |
-| [postcss-import] to import CSS files            | -                             | -                                |
-| [postcss-apply] for property sets               | :+1:                          | -                                |
-| [postcss-custom-media] for custom media queries | :+1:                          | :+1:                             |
-| [postcss-custom-properties] for CSS variables   | :+1:                          | :+1:                             |
-
-</details>
+See [§ Usage as functional selectors](#usage-as-functional-selectors).
 
 ```css
-@import "responsive-modular-scale.css";
+.title {
+  @extend %ms-font-size-2;
+}
 ```
+
+### Property sets (`postcss-apply`)
+
+See [§ Usage as property sets](#usage-as-property-sets).
+
+```css
+.title {
+  @apply --ms-font-size-2;
+}
+```
+
+### CSS modules
+
+See [§ Usage as a CSS module](#usage-as-a-css-module).
+
+```css
+.title {
+  composes: msFontSize2 from 'responsive-modular-scale.css/modularscale.module.css';
+}
+```
+
+## How it works
 
 To use it, use any of the provided `--font-size-#` custom property sets:
 
@@ -128,23 +89,11 @@ div {
 
 </details>
 
-It gives you the following custom property sets:
+## Configuring settings
 
-- `@apply --font-size--1` (negative 1)
-- `@apply --font-size-0` (applies the base font size)
-- `@apply --font-size-1`
-- `@apply --font-size-2`
-- ...
-- `@apply --font-size-20`
-
-## Configuration
-
-It's recommended you include this in a "common" file included in most of your project's files; usually, that's something like `variables.css`. You can change these ratios and breakpoints like so:
+Set up a `variables.css` with your configuration. Consider placing this wherever you put your common variables (eg, color palettes and font names). See: [`defaults.css`](./defaults.css).
 
 ```css
-/* variables.css */
-@import "responsive-modular-scale.css";
-
 :root {
   --ms-ratio-sm: 1.15;
   --ms-ratio-md: 1.17;
@@ -159,18 +108,149 @@ It's recommended you include this in a "common" file included in most of your pr
 @custom-media --ms-viewport-lg (width > 768px);
 ```
 
-```css
-/* your-other-styles.css */
-@import "./variables.css";
+## Usage as functional selectors
 
-body {
-  @apply --font-size-0;
-}
+To use this as functional selectors (ie, `@extend`), you'll need these PostCSS plugins:
 
-div {
-  @apply --font-size-4;
+- [**postcss-prepend-imports**](postcss-prepend-imports)
+- [**postcss-extend-rule**](postcss-extend-rule)
+- [**postcss-preset-env**](postcss-preset-env)
+
+Configure PostCSS to load these plugins and import your variables. Here's an example config:
+
+```js
+/* postcss.config.js */
+module.exports = ctx => {
+  return {
+    plugins: [
+      // ...
+      require('postcss-prepend-imports')({
+        files: [
+          require.resolve(
+            'responsive-modular-scale.css/responsive-modular-scale.css'
+          )
+        ]
+      }),
+      require('postcss-extend-rule')(),
+      require('postcss-preset-env')({
+        importFrom: [require.resolve('./your/path/to/variables.css')]
+      })
+      // ...
+    ]
+  }
 }
 ```
+
+You'll then be able to use them with `@extend` in your CSS.
+
+```css
+.title {
+  @extend %ms-font-size-2;
+}
+```
+
+These selectors will become available:
+
+- `@extend %ms-font-size--1` (negative 1)
+- `@extend %ms-font-size-0` (applies the base font size)
+- `@extend %ms-font-size-1`
+- `@extend %ms-font-size-2`
+- ...
+- `@extend %ms-font-size-20`
+
+## Usage as property sets
+
+You can also apply modular scale font sizes using CSS property sets (aka, `@apply`). You'll need these PostCSS plugins:
+
+- [**postcss-prepend-imports**](postcss-prepend-imports)
+- [**postcss-apply**](postcss-apply)
+- [**postcss-preset-env**](postcss-preset-env)
+
+Configure PostCSS to load these plugins and import your variables. Here's an example config:
+
+```js
+/* postcss.config.js */
+module.exports = ctx => {
+  return {
+    plugins: [
+      // ...
+      require('postcss-prepend-imports')({
+        files: [
+          require.resolve(
+            'responsive-modular-scale.css/responsive-modular-scale.css'
+          )
+        ]
+      }),
+      require('postcss-extend-rule')(),
+      require('postcss-preset-env')({
+        importFrom: [require.resolve('./your/path/to/variables.css')]
+      })
+      // ...
+    ]
+  }
+}
+```
+
+You'll then be able to use them with `@apply` in your CSS.
+
+```css
+.title {
+  @apply --ms-font-size-2;
+}
+```
+
+These property sets will become available:
+
+- `@apply --font-size--1` (negative 1)
+- `@apply --font-size-0` (applies the base font size)
+- `@apply --font-size-1`
+- `@apply --font-size-2`
+- ...
+- `@apply --font-size-20`
+
+## Usage as a CSS module
+
+:warning: `Experimental` - You can apply modular scale font sizes using CSS modules.
+
+To use this as functional selectors (ie, `@extend`), you'll need these PostCSS plugins:
+
+- [**postcss-preset-env**](postcss-preset-env)
+
+Configure PostCSS to load these plugins and import your variables. Here's an example config:
+
+```js
+/* postcss.config.js */
+module.exports = ctx => {
+  return {
+    plugins: [
+      // ...
+      require('postcss-preset-env')({
+        importFrom: [require.resolve('./your/path/to/variables.css')]
+      })
+      // ...
+    ]
+  }
+}
+```
+
+You'll then be able to use them with `composes` in your CSS.
+
+```css
+.myButton {
+  composes: msFontSize2 from 'responsive-modular-scale.css/modularscale.module.css';
+}
+```
+
+These CSS classes are available:
+
+- `msFontSizeMinus1` (negative 1)
+- `msFontSize0` (applies the base font size)
+- `msFontSize1`
+- `msFontSize2`
+- ...
+- `msFontSize20`
+
+Learn more about the `composes:` property from the [CSS modules documentation](https://github.com/css-modules/css-modules#composition).
 
 ## Prior art
 
@@ -195,3 +275,7 @@ Authored and maintained by Rico Sta. Cruz with help from contributors ([list][co
 
 [mit]: LICENSE.md
 [contributors]: http://github.com/rstacruz/responsive-modular-scale.css/contributors
+[css-modules]: https://github.com/css-modules/css-modules
+[postcss-apply]: https://yarnpkg.com/en/package/postcss-apply
+[postcss-extend-rule]: https://github.com/csstools/postcss-extend-rule
+[postcss-prepend-imports]: https://www.npmjs.com/package/postcss-prepend-imports

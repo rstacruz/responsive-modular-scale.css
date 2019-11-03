@@ -1,4 +1,4 @@
-.fontSizeMinus1 {
+.msFontSizeMinus1 {
   font-size: calc(var(--ms-base-sm) / var(--ms-ratio-sm));
   @media (--ms-viewport-md) {
     font-size: calc(var(--ms-base-md) / var(--ms-ratio-md));
@@ -8,7 +8,7 @@
   }
 }
 
-.fontSize0 {
+.msFontSize0 {
   font-size: var(--ms-base-sm);
   @media (--ms-viewport-md) {
     font-size: var(--ms-base-md);
@@ -18,7 +18,7 @@
   }
 }
 
-.fontSize1 {
+.msFontSize1 {
   font-size: calc(var(--ms-base-sm) * var(--ms-ratio-sm));
   @media (--ms-viewport-md) {
     font-size: calc(var(--ms-base-md) * var(--ms-ratio-md));
@@ -28,7 +28,7 @@
   }
 }
 
-.fontSize2 {
+.msFontSize2 {
   font-size: calc(var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm));
   @media (--ms-viewport-md) {
     font-size: calc(
@@ -42,7 +42,7 @@
   }
 }
 
-.fontSize3 {
+.msFontSize3 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm)
@@ -61,7 +61,7 @@
   }
 }
 
-.fontSize4 {
+.msFontSize4 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm)
@@ -80,7 +80,7 @@
   }
 }
 
-.fontSize5 {
+.msFontSize5 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm)
@@ -99,7 +99,7 @@
   }
 }
 
-.fontSize6 {
+.msFontSize6 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -121,7 +121,7 @@
   }
 }
 
-.fontSize7 {
+.msFontSize7 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -143,7 +143,7 @@
   }
 }
 
-.fontSize8 {
+.msFontSize8 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -165,7 +165,7 @@
   }
 }
 
-.fontSize9 {
+.msFontSize9 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -190,7 +190,7 @@
   }
 }
 
-.fontSize10 {
+.msFontSize10 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -215,7 +215,7 @@
   }
 }
 
-.fontSize11 {
+.msFontSize11 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -240,7 +240,7 @@
   }
 }
 
-.fontSize12 {
+.msFontSize12 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -268,7 +268,7 @@
   }
 }
 
-.fontSize13 {
+.msFontSize13 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -296,7 +296,7 @@
   }
 }
 
-.fontSize14 {
+.msFontSize14 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -324,7 +324,7 @@
   }
 }
 
-.fontSize15 {
+.msFontSize15 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -355,7 +355,7 @@
   }
 }
 
-.fontSize16 {
+.msFontSize16 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -386,7 +386,7 @@
   }
 }
 
-.fontSize17 {
+.msFontSize17 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -417,7 +417,7 @@
   }
 }
 
-.fontSize18 {
+.msFontSize18 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -451,7 +451,7 @@
   }
 }
 
-.fontSize19 {
+.msFontSize19 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -485,7 +485,7 @@
   }
 }
 
-.fontSize20 {
+.msFontSize20 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *

@@ -1,4 +1,4 @@
-%font-size--1 {
+%ms-font-size--1 {
   font-size: calc(var(--ms-base-sm) / var(--ms-ratio-sm));
   @media (--ms-viewport-md) {
     font-size: calc(var(--ms-base-md) / var(--ms-ratio-md));
@@ -8,7 +8,7 @@
   }
 }
 
-%font-size-0 {
+%ms-font-size-0 {
   font-size: var(--ms-base-sm);
   @media (--ms-viewport-md) {
     font-size: var(--ms-base-md);
@@ -18,7 +18,7 @@
   }
 }
 
-%font-size-1 {
+%ms-font-size-1 {
   font-size: calc(var(--ms-base-sm) * var(--ms-ratio-sm));
   @media (--ms-viewport-md) {
     font-size: calc(var(--ms-base-md) * var(--ms-ratio-md));
@@ -28,7 +28,7 @@
   }
 }
 
-%font-size-2 {
+%ms-font-size-2 {
   font-size: calc(var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm));
   @media (--ms-viewport-md) {
     font-size: calc(
@@ -42,7 +42,7 @@
   }
 }
 
-%font-size-3 {
+%ms-font-size-3 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm)
@@ -61,7 +61,7 @@
   }
 }
 
-%font-size-4 {
+%ms-font-size-4 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm)
@@ -80,7 +80,7 @@
   }
 }
 
-%font-size-5 {
+%ms-font-size-5 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm)
@@ -99,7 +99,7 @@
   }
 }
 
-%font-size-6 {
+%ms-font-size-6 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -121,7 +121,7 @@
   }
 }
 
-%font-size-7 {
+%ms-font-size-7 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -143,7 +143,7 @@
   }
 }
 
-%font-size-8 {
+%ms-font-size-8 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -165,7 +165,7 @@
   }
 }
 
-%font-size-9 {
+%ms-font-size-9 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -190,7 +190,7 @@
   }
 }
 
-%font-size-10 {
+%ms-font-size-10 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -215,7 +215,7 @@
   }
 }
 
-%font-size-11 {
+%ms-font-size-11 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -240,7 +240,7 @@
   }
 }
 
-%font-size-12 {
+%ms-font-size-12 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -268,7 +268,7 @@
   }
 }
 
-%font-size-13 {
+%ms-font-size-13 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -296,7 +296,7 @@
   }
 }
 
-%font-size-14 {
+%ms-font-size-14 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -324,7 +324,7 @@
   }
 }
 
-%font-size-15 {
+%ms-font-size-15 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -355,7 +355,7 @@
   }
 }
 
-%font-size-16 {
+%ms-font-size-16 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -386,7 +386,7 @@
   }
 }
 
-%font-size-17 {
+%ms-font-size-17 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -417,7 +417,7 @@
   }
 }
 
-%font-size-18 {
+%ms-font-size-18 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -451,7 +451,7 @@
   }
 }
 
-%font-size-19 {
+%ms-font-size-19 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
@@ -485,7 +485,7 @@
   }
 }
 
-%font-size-20 {
+%ms-font-size-20 {
   font-size: calc(
     var(--ms-base-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
       var(--ms-ratio-sm) * var(--ms-ratio-sm) * var(--ms-ratio-sm) *
