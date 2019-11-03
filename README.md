@@ -131,9 +131,11 @@ module.exports = ctx => {
           )
         ]
       }),
-      require('postcss-extend-rule')(),
       require('postcss-preset-env')({
-        importFrom: [require.resolve('./your/path/to/variables.css')]
+        importFrom: [require.resolve('./your/path/to/variables.css')],
+        insertBefore: {
+          'all-property': [require('postcss-extend-rule')()]
+        }
       })
       // ...
     ]
@@ -181,7 +183,7 @@ module.exports = ctx => {
           )
         ]
       }),
-      require('postcss-extend-rule')(),
+      require('postcss-apply')(),
       require('postcss-preset-env')({
         importFrom: [require.resolve('./your/path/to/variables.css')]
       })
